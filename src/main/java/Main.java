@@ -34,7 +34,6 @@ public class Main {
 
         String operation = parts[1];
 
-        // Выполнение арифметической операции
         int result;
         switch (operation) {
             case "+":
