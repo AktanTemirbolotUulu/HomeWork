@@ -25,13 +25,11 @@ public class Main {
         try {
             num1 = Integer.parseInt(parts[0]);
             num2 = Integer.parseInt(parts[2]);
-            if (num1 < 0 || num1 >= 10 || num2 < 0 || num2 >= 10) {
+            if (num1 < 0 || num1 > 10 || num2 < 0 || num2 > 10) {
                 throw new NumberFormatException();
             }
         } catch (NumberFormatException e) {
             throw new Exception("Числа должны быть от 1 до 10 включительно.");
-        } catch (RuntimeException e) {
-            throw new Exception(e.getMessage());
         }
 
         String operation = parts[1];
