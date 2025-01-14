@@ -29,7 +29,7 @@ public class Main {
                 throw new NumberFormatException();
             }
         } catch (NumberFormatException e) {
-            throw new Exception("Числа должны быть от 1 до 10 включительно.");
+            throw new Exception("Числа должны быть от 0 до 10 включительно.");
         }
 
         String operation = parts[1];
